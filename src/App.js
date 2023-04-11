@@ -5,7 +5,7 @@ import Main from "./pages/main/Main";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div>
       <RouterProvider router={router}/>
     </div>
   );

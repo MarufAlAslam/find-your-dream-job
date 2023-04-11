@@ -5,11 +5,14 @@ import Footer from '../../components/footer/Footer'
 
 const Main = () => {
     return (
-        <div className='container mx-auto'>
-            <Header/>
-            <Outlet/>
-            <Footer/>
-        </div>
+        <>
+            <div className='container mx-auto'>
+                <Header />
+                <Outlet />
+
+            </div>
+            <Footer />
+        </>
     )
 }
 
