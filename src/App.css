@@ -10,3 +10,25 @@
     max-width: 100%;
     padding: 0 20px;
 }
+
+
+/* gradient btn */
+.gradient-btn{
+    background: linear-gradient(90deg,#7E90FE, #9873FF);
+    border: 0;
+}
+
+/* menu */
+.menu a{
+    font-weight: 600;
+}
+.menu a.active span{
+    color: black;
+}
+
+/* gradient text */
+a.active{
+    background: linear-gradient(90deg,#7E90FE, #9873FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
