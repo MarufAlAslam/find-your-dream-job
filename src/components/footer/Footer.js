@@ -1,10 +1,72 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+import fb from './assets/fb.png'
+import tw from './assets/tw.png'
+import insta from './assets/insta.png'
 
 const Footer = () => {
     return (
         <div className='py-10 bg-[#1A1919]'>
             <div className='container mx-auto'>
-                Footer Here
+                <footer className="footer d-flex text-white">
+                    <div className='w-2/6'>
+                        <NavLink to={'/'} className="active btn font-extrabold text-left p-0 bg-transparent hover:bg-transparent text-black border-none normal-case text-xl">
+                            <span className='text-black'>JobFinder</span>
+                        </NavLink>
+                        <p>
+                            job finder is a tool or platform designed to help job seekers find employment opportunities. These resources can include job boards, networking events, and career fairs.
+                        </p>
+
+                        <div className='flex mt-4'>
+                            <a className='mr-4'>
+                                <img src={fb} style={{ width: "35px" }} />
+                            </a>
+                            <a className='mr-4'>
+                                <img src={tw} style={{ width: "35px" }} />
+                            </a>
+                            <a className='mr-4'>
+                                <img src={insta} style={{ width: "35px" }} />
+                            </a>
+                        </div>
+                    </div>
+                    <div className='w-1/6 p-2'>
+                        <span className="footer-title ">Company</span>
+                        <a className="link link-hover">About Us</a>
+                        <a className="link link-hover">Work</a>
+                        <a className="link link-hover">Latest News</a>
+                        <a className="link link-hover">Careers</a>
+                    </div>
+                    <div className='w-1/6 p-2'>
+                        <span className="footer-title ">Product</span>
+                        <a className="link link-hover">Prototype</a>
+                        <a className="link link-hover">Plans & Pricing</a>
+                        <a className="link link-hover">Customers</a>
+                        <a className="link link-hover">Integrations</a>
+                    </div>
+                    <div className='w-1/6 p-2'>
+                        <span className="footer-title ">Support</span>
+                        <a className="link link-hover">Help Desk</a>
+                        <a className="link link-hover">Sales</a>
+                        <a className="link link-hover">Become a Partner</a>
+                        <a className="link link-hover">Developers</a>
+                    </div>
+                    <div className='w-1/6 p-2'>
+                        <span className="footer-title ">Contact</span>
+                        <a className="link link-hover">524 Broadway , NYC</a>
+                        <a className="link link-hover">+1 777 - 978 - 5570</a>
+                    </div>
+
+                </footer>
+
+                <hr className='text-[#7E90FE33] my-10' />
+
+                <div className='flex justify-between items-center'>
+                    <p className='text-gray-300 text-sm'>© 2021 JobFinder. All rights reserved.</p>
+                    <p className='text-gray-300 text-sm'>
+                        Powered by CareerHub
+                    </p>
+                </div>
             </div>
         </div>
     )
