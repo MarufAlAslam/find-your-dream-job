@@ -1,9 +1,12 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./router"
+import "./App.css";
+import Main from "./pages/main/Main";
+
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router}></RouterProvider>
+    <div className="container mx-auto">
+      <RouterProvider router={router}/>
     </div>
   );
 }
