@@ -27,7 +27,7 @@
 }
 
 /* gradient text */
-a.active{
+a.active, .text-gradient{
     background: linear-gradient(90deg,#7E90FE, #9873FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
