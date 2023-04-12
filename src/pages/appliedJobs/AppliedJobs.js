@@ -69,11 +69,11 @@ const AppliedJobs = () => {
                                             ))
                                         }
                                     </p>
-                                    <div className='flex items-center'>
+                                    <div className='lg:flex items-center'>
                                         <p className='mt-4 text-gray-500 flex items-center text-sm'>
                                             <HiLocationMarker className='mr-2' /> {job.location}
                                         </p>
-                                        <p className='mt-4 ml-3 text-gray-500 flex items-center text-sm'>
+                                        <p className='mt-4 lg:ml-3 text-gray-500 flex items-center text-sm'>
                                             <BiDollarCircle className='mr-2' /> Salary: {job.salary}
                                         </p>
                                     </div>

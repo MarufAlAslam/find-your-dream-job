@@ -21,7 +21,7 @@ const Details = ({ job }) => {
     }
     return (
         <div className='py-10'>
-            <div className='flex justify-between items-start'>
+            <div className='lg:flex justify-between items-start'>
                 <div className='lg:w-2/3 w-full p-3'>
                     <p className='mb-5'>
                         <b>Job Description:</b> {job.jobDescription}
