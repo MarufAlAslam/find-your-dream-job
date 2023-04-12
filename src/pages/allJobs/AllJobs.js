@@ -12,6 +12,17 @@ const AllJobs = () => {
         setJobs(data);
         // console.log(jobs);
     }, [data]);
+
+    const filterJobs = (e) => {
+        const value = e.target.value;
+        // console.log(value);
+        if (value === 'all') {
+            setJobs(data);
+        }
+        else {
+            setJobs(data.filter(job => job.options.includes(value)));
+        }
+    }
     return (
         <div className='py-10'>
             <Breadcrumb>
@@ -19,6 +30,19 @@ const AllJobs = () => {
                     All Jobs
                 </h2>
             </Breadcrumb>
+
+            {/* filter */}
+            <div className='mt-8 flex justify-end'>
+                <div className='bg-gray-200 pr-4 rounded-md'>
+                    <select className='rounded-md focus:shadow-none focus:outline-none bg-transparent px-5 py-2 inline-flex' onChange={filterJobs}>
+                        <option value="all">All</option>
+                        <option value="Remote">Remote Jobs</option>
+                        <option value="On Site">On Site Jobs</option>
+                        <option value="Part Time">Part Time Jobs</option>
+                        <option value="Full Time">Full Time Jobs</option>
+                    </select>
+                </div>
+            </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
                 {

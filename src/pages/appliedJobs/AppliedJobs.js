@@ -13,6 +13,20 @@ const AppliedJobs = () => {
         // console.log(appliedJobs);
         setAppliedJobs(appliedJobs);
     }, []);
+
+    const filterJobs = (e) => {
+        const value = e.target.value;
+        // console.log(value);
+        if (value === 'all') {
+            const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs'));
+            setAppliedJobs(appliedJobs);
+        }
+        else {
+            const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs'));
+            const filteredJobs = appliedJobs.filter(job => job.options.includes(value));
+            setAppliedJobs(filteredJobs);
+        }
+    }
     return (
         <div className='py-10'>
             <Breadcrumb>
@@ -21,6 +35,18 @@ const AppliedJobs = () => {
                 </h2>
             </Breadcrumb>
 
+            {/* filter */}
+            <div className='mt-8 flex justify-end'>
+                <div className='bg-gray-200 pr-4 rounded-md'>
+                    <select className='rounded-md focus:shadow-none focus:outline-none bg-transparent px-5 py-2 inline-flex' onChange={filterJobs}>
+                        <option value="all">All</option>
+                        <option value="Remote">Remote Jobs</option>
+                        <option value="On Site">On Site Jobs</option>
+                        <option value="Part Time">Part Time Jobs</option>
+                        <option value="Full Time">Full Time Jobs</option>
+                    </select>
+                </div>
+            </div>
             <div className='mt-8'>
                 {
                     appliedJobs ? (
