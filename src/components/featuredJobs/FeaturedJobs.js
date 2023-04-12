@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
-import GradientButton from '../gradientButton/GradientButton'
 import { HiLocationMarker } from 'react-icons/hi'
 import { BiDollarCircle } from 'react-icons/bi'
 
