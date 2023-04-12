@@ -19,42 +19,42 @@ const Footer = () => {
                         </p>
 
                         <div className='flex mt-4'>
-                            <a className='mr-4'>
-                                <img src={fb} style={{ width: "35px" }} />
+                            <a href='/' className='mr-4'>
+                                <img alt='' src={fb} style={{ width: "35px" }} />
                             </a>
-                            <a className='mr-4'>
-                                <img src={tw} style={{ width: "35px" }} />
+                            <a href='/' className='mr-4'>
+                                <img alt='' src={tw} style={{ width: "35px" }} />
                             </a>
-                            <a className='mr-4'>
-                                <img src={insta} style={{ width: "35px" }} />
+                            <a href='/' className='mr-4'>
+                                <img alt='' src={insta} style={{ width: "35px" }} />
                             </a>
                         </div>
                     </div>
                     <div className='w-1/6 p-2'>
                         <span className="footer-title ">Company</span>
-                        <a className="link link-hover">About Us</a>
-                        <a className="link link-hover">Work</a>
-                        <a className="link link-hover">Latest News</a>
-                        <a className="link link-hover">Careers</a>
+                        <a href='/' className="link link-hover">About Us</a>
+                        <a href='/' className="link link-hover">Work</a>
+                        <a href='/' className="link link-hover">Latest News</a>
+                        <a href='/' className="link link-hover">Careers</a>
                     </div>
                     <div className='w-1/6 p-2'>
                         <span className="footer-title ">Product</span>
-                        <a className="link link-hover">Prototype</a>
-                        <a className="link link-hover">Plans & Pricing</a>
-                        <a className="link link-hover">Customers</a>
-                        <a className="link link-hover">Integrations</a>
+                        <a href='/' className="link link-hover">Prototype</a>
+                        <a href='/' className="link link-hover">Plans & Pricing</a>
+                        <a href='/' className="link link-hover">Customers</a>
+                        <a href='/' className="link link-hover">Integrations</a>
                     </div>
                     <div className='w-1/6 p-2'>
                         <span className="footer-title ">Support</span>
-                        <a className="link link-hover">Help Desk</a>
-                        <a className="link link-hover">Sales</a>
-                        <a className="link link-hover">Become a Partner</a>
-                        <a className="link link-hover">Developers</a>
+                        <a href='/' className="link link-hover">Help Desk</a>
+                        <a href='/' className="link link-hover">Sales</a>
+                        <a href='/' className="link link-hover">Become a Partner</a>
+                        <a href='/' className="link link-hover">Developers</a>
                     </div>
                     <div className='w-1/6 p-2'>
                         <span className="footer-title ">Contact</span>
-                        <a className="link link-hover">524 Broadway , NYC</a>
-                        <a className="link link-hover">+1 777 - 978 - 5570</a>
+                        <a href='/' className="link link-hover">524 Broadway , NYC</a>
+                        <a href='/' className="link link-hover">+1 777 - 978 - 5570</a>
                     </div>
 
                 </footer>

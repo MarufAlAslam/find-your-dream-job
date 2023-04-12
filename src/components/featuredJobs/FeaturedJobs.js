@@ -11,11 +11,11 @@ const FeaturedJobs = () => {
     useEffect(() => {
         // show first 4 jobs
         setJobs(data.slice(0, 4))
-    }, [])
+    }, [data])
 
     const viewAllJobs = () => {
         // show all jobs
-        if(btnText === 'View All Jobs') {
+        if (btnText === 'View All Jobs') {
             setJobs(data)
             setBtnText('View Less Jobs')
         } else {
@@ -59,7 +59,7 @@ const FeaturedJobs = () => {
                                 </p>
                             </div>
                             <GradientButton>
-                                <Link to={`/job-details/${job.id}`}>
+                                <Link to={`/job-details?id=${job.id}`} state={{ id: job.id }}>
                                     View Details
                                 </Link>
                             </GradientButton>
@@ -72,7 +72,7 @@ const FeaturedJobs = () => {
             <div className='text-center mt-10'>
                 <GradientButton>
                     <span onClick={viewAllJobs}>
-                       {btnText}
+                        {btnText}
                     </span>
                 </GradientButton>
             </div>
