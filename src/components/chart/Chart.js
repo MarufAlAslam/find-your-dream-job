@@ -4,35 +4,38 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 const Chart = () => {
     const data = [
         {
+            id: 1,
             name: 'Assignment 1',
             marks: 60,
         },
         {
+            id: 2,
             name: 'Assignment 2',
             marks: 60,
         },
         {
+            id: 3,
             name: 'Assignment 3',
             marks: 57,
         },
         {
+            id: 4,
             name: 'Assignment 4',
             marks: 60,
         },
         {
+            id: 5,
             name: 'Assignment 5',
             marks: 60,
         },
         {
+            id: 6,
             name: 'Assignment 6',
             marks: 60,
         },
         {
+            id: 7,
             name: 'Assignment 7',
-            marks: 60,
-        },
-        {
-            name: 'Assignment 8',
             marks: 60,
         },
     ];
