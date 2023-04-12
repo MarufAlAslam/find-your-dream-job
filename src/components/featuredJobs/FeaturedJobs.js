@@ -58,11 +58,9 @@ const FeaturedJobs = () => {
                                     <BiDollarCircle className='mr-2' /> Salary: {job.salary}
                                 </p>
                             </div>
-                            <GradientButton>
-                                <Link to={`/job-details?id=${job.id}`} state={{ id: job.id }}>
-                                    View Details
-                                </Link>
-                            </GradientButton>
+                            <Link className='btn gradient-btn' to={`/job-details?id=${job.id}`} state={{ id: job.id }}>
+                                View Details
+                            </Link>
                         </div>
                     ))
                 }
@@ -70,11 +68,9 @@ const FeaturedJobs = () => {
 
             {/* button to view all jobs */}
             <div className='text-center mt-10'>
-                <GradientButton>
-                    <span onClick={viewAllJobs}>
-                        {btnText}
-                    </span>
-                </GradientButton>
+                <button className='btn gradient-btn' onClick={viewAllJobs}>
+                    {btnText}
+                </button>
             </div>
         </div>
     )

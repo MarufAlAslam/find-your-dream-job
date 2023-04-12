@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import Breadcrumb from '../breadcrumb/Breadcrumb';
+import Details from '../details/Details';
 
 const JobDetails = () => {
     // get id from url query params
@@ -17,10 +19,20 @@ const JobDetails = () => {
             })
     }, [id]);
 
-    console.log(data);
+    // console.log(data);
     return (
         <div className='py-10'>
-            Hello
+            <Breadcrumb>
+                <img src={data.imageUrl} className='block mx-auto mb-4 h-[80px]' alt='' />
+                <h2 className='text-3xl font-bold mb-2'>
+                    {data?.jobTitle}
+                </h2>
+                <p>
+                    {data?.companyName}
+                </p>
+            </Breadcrumb>
+
+            <Details job={data} />
         </div>
     );
 };
