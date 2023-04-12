@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import GradientButton from '../gradientButton/GradientButton'
 
 const Header = () => {
@@ -52,9 +52,9 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <GradientButton>
+                <Link to={'/all-jobs'} className='btn gradient-btn'>
                     Start Applying
-                </GradientButton>
+                </Link>
             </div>
         </div>
     )

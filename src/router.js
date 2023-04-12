@@ -5,6 +5,7 @@ import JobDetails from "./components/jobDetails/JobDetails";
 import AppliedJobs from "./pages/appliedJobs/AppliedJobs";
 import Statistics from "./pages/statistics/Statistics";
 import Broken from "./pages/broken/Broken";
+import AllJobs from "./pages/allJobs/AllJobs";
 
 // browser router file
 const router = createBrowserRouter([
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
             {
                 path: "/statistics",
                 element: <Statistics />
+            },
+            {
+                path: "/all-jobs",
+                loader: () => fetch("./data.json").then(res => res.json()),
+                element: <AllJobs />
             },
             {
                 path: "*",
