@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import JobDetails from "./components/jobDetails/JobDetails";
 import AppliedJobs from "./pages/appliedJobs/AppliedJobs";
 import Statistics from "./pages/statistics/Statistics";
+import Broken from "./pages/broken/Broken";
 
 // browser router file
 const router = createBrowserRouter([
@@ -30,13 +31,13 @@ const router = createBrowserRouter([
             },
             {
                 path: "*",
-                element: "404 Not Found"
+                element: <Broken />
             }
         ]
     },
     {
         path: "*",
-        element: "404 Not Found"
+        element: <Broken />
     }
 ])
 
